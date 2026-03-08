@@ -1,0 +1,32 @@
+----------------------------------------------------------
+-  Instructions for folders, files and their content.  -
+----------------------------------------------------------
+
+Website link:
+https://hkubs-stat.github.io/HKU-2024-Summer-Workshop/
+
+Use "Sublime Text" to edit html files.
+
+"index.html" out of folders: Home page.
+
+Folder "assets" includes (but not limited to):
+HKU  banner, MTR instructions, speakers' photo, campus map, etc.
+
+Folder "registration":
+only registration link. Not used in the website.
+
+Folder "sessions":
+Program page. Includes timetable, title, abstract.
+
+Folder "Transportation":
+Accomodation page. Includes hotel recommendation and 
+transportation from airport / train station to hotels.
+
+Folder "venue":
+Venue & Direction page. Includes: campus map, 
+guide to conference venue (and MTR & Alipay guide).
+ - For link only, use google map link share.
+
+ - For showing map in website using iframe, choose embeded map in google map.
+   Or use other website - the embed link for google map can be found:
+   https://www.embed-map.com/
