@@ -77,9 +77,10 @@ th,td{
 }
 
 /* Invited speaker photo: same aspect ratio as 2026_Jun_Liu.jpg (500×622). Crop: sides if too wide, bottom if too long. */
+/* Experimental Update: 150 times 150 (2026/03/09) */
 .speaker-photo-wrap {
     height: 150pt;
-    width: 120.6pt;
+    width: 150pt;
     overflow: hidden;
     display: block;
     margin: 8px auto;
