@@ -17,6 +17,43 @@
     HeadColor{
         color:yellow;
     }
+
+    @keyframes hiring-wave {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-0.35em); }
+    }
+
+    @keyframes hiring-icon-pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.15); }
+    }
+
+    .hiring-title-wrap {
+        display: inline-block;
+    }
+
+    .hiring-icon {
+        display: inline-block;
+        margin-right: 0.25em;
+        animation: hiring-icon-pulse 1.2s ease-in-out infinite;
+    }
+
+    .hiring-wave-letter {
+        display: inline-block;
+        animation: hiring-wave 1.8s ease-in-out infinite;
+    }
+
+    .hiring-wave-space {
+        display: inline-block;
+        width: 0.35em;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .hiring-icon,
+        .hiring-wave-letter {
+            animation: none;
+        }
+    }
     </style>
 
 
@@ -240,7 +277,10 @@
     <table>
         <tr>
             <td class="title" style="font-size:4vmin;">
-                We are hiring!<br>
+                <span class="hiring-title-wrap">
+                    <span class="hiring-icon" aria-hidden="true">📢</span>
+                    <span class="hiring-wave-letter" style="animation-delay: 0s">W</span><span class="hiring-wave-letter" style="animation-delay: 0.08s">e</span><span class="hiring-wave-space"></span><span class="hiring-wave-letter" style="animation-delay: 0.16s">a</span><span class="hiring-wave-letter" style="animation-delay: 0.24s">r</span><span class="hiring-wave-letter" style="animation-delay: 0.32s">e</span><span class="hiring-wave-space"></span><span class="hiring-wave-letter" style="animation-delay: 0.4s">h</span><span class="hiring-wave-letter" style="animation-delay: 0.48s">i</span><span class="hiring-wave-letter" style="animation-delay: 0.56s">r</span><span class="hiring-wave-letter" style="animation-delay: 0.64s">i</span><span class="hiring-wave-letter" style="animation-delay: 0.72s">n</span><span class="hiring-wave-letter" style="animation-delay: 0.8s">g</span><span class="hiring-wave-letter" style="animation-delay: 0.88s">!</span>
+                </span><br>
             </td>
         </tr>
     </table>
