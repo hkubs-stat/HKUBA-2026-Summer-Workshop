@@ -477,7 +477,7 @@
     <table id="Jian_Huang_abstract">
         <tr>
             <td class="title" style="font-size:3vmin;">
-                Flow Matching and Foundation Models for Conditional Generative Learning<br>
+                Representation-Driven Diffusion for Semi-Supervised Conditional Generation<br>
                 <!-- title here <br> -->
             </td>
         </tr>
@@ -489,7 +489,7 @@
         </tr>
         <tr>
             <td class="abstract" style="font-size:2.3vmin;text-align:justify">
-                Abstract: In this talk, we introduce continuous normalizing flows (CNFs) based on Gaussian interpolants, exploring their theoretical properties via a flow-matching objective that directly aligns model dynamics with target probability flows. Furthermore, we discuss strategies for integrating foundation models into CNFs to capture rich conditional distributions. These models can serve either as priors to regularize the generative process or as robust feature extractors. Finally, we demonstrate the versatility of these approaches through applications in conditional image synthesis, generative causal inference, functional protein sequence design, and synthetic data augmentation.
+                Abstract: Conditional generative modeling remains a challenging problem in semi-supervised settings where labeled data is scarce but unlabeled samples are abundant. To effectively leverage structural information embedded within the unlabeled dataset and compensate for sparse conditioning signals, we propose a semi-supervised framework combining conditional stochastic interpolation with low-dimensional latent representations. RepG decomposes generation into two stages: label-dependent latent sampling and high-dimensional reconstruction. This isolates the supervised learning of conditional dependencies to a low-dimensional space, requiring few labels while utilizing the abundant unlabeled data purely for reconstruction. Theoretically, we establish an error decomposition showing that the Kullback-Leibler divergence of RepG comprises stage-wise estimation errors and a structural bias quantified by conditional mutual information. For deep neural network estimators, we derive non-asymptotic convergence rates proving that RepG significantly improves sample complexity. By confining the supervised estimation burden to the low intrinsic dimension of the latent representation, RepG achieves a strictly faster convergence rate. Complemented by a minimax lower bound, our theoretical results demonstrate that this method effectively mitigates the curse of dimensionality inherent in direct ambient-space generative modeling.
             </td>
         </tr>
     </table>
